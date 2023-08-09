@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .bg-body-tertiary {
+            transition: all 0.8s ease !important;
+        }
+
+        .bg-body-tertiary:hover {
+            box-shadow: -10px -10px 20px black !important;
+            transform: scale(1.04);
+        }
+        .carousel-control-next-icon, .carousel-control-next{
+            color: rgb(191, 212, 0) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg px-3 py-2 fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-auto-close="outside" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropend">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Action</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Biryani</a></li>
+                                    <li><a href="#" class="dropdown-item">Biryani</a></li>
+                                    <li><a href="#" class="dropdown-item">Biryani</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <!-- Main body -->
+    <div class="container py-5 mt-5 bg-warning text-dark">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia similique, consequuntur nam nulla fugiat
+        laboriosam eveniet perspiciatis tenetur, cum beatae hic nostrum, dolorum reiciendis aut eius nisi? Quod, odio?
+    </div>
+    <div class="container-xxl p-4 bg-primary text-white" style="border: 2px solid rgb(1, 255, 47);">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad corrupti est, minus illum modi dignissimos
+        quisquam recusandae, inventore doloribus repudiandae obcaecati officiis tempora rem odit. Tempora, aperiam
+        minus. Pariatur.
+    </div>
+    <div class="container-xl border">
+        <div class="row p-5" style="border: 2px solid blue;">
+            <div class="col-sm-3 p-2" style="border: 2px solid rgb(60, 255, 0);">
+                <div class="h1 p-2 my-2">Usman Here</div>
+            </div>
+            <div class="col-sm-3" style="border: 2px solid rgb(0, 255, 30);">
+                <div class="display-5">Usman <code>Here</code></div>
+            </div>
+            <div class="col-sm-3" style="border: 2px solid rgb(0, 255, 51);">Usman Here</div>
+            <div class="col-sm-3" style="border: 2px solid rgb(30, 255, 0);">
+                <kbd>Usman</kbd> Here
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12">
+            <blockquote class="blockquote">
+                <p>Lorem ipsum dolor, sit amet <mark class="p-0">consectetur adipisicing elit.</mark> Aperiam numquam
+                    rem assumenda dignissimos facilis sunt aspernatur illo sit, distinctio vitae dolorem ut qui magni
+                    fugit? Accusantium fugiat odit sequi numquam!</p>
+            </blockquote>
+            <footer class="blockquote-footer">By Usman Khan</footer>
+        </div>
+        <div class="col-sm-12">
+            <pre>Hello There!
+            How is it going.
+            Are you good or not?         Wow
+        </pre>
+            <p class="h1 text-center">Web Developer</p>
+            <p class="h1 text-end">Web Developer</p>
+            <p class="h1 text-nowrap">Web Developer</p>
+            <p class="h1 text-start">Web Developer</p>
+        </div>
+        <div class="col-sm-12">
+            <ol class="list-inline">
+                <li class="list-inline-item">Coffee</li>
+                <li class="list-inline-item">Cold Drink</li>
+                <li class="list-inline-item">Juice</li>
+                <li class="list-inline-item"><kbd>Water</kbd></li>
+            </ol>
+            <ul class="list-unstyled">
+                <li>Water</li>
+                <li>Juice</li>
+                <li>Drink</li>
+                <ul>
+                    <li>7up</li>
+                    <li>Pepsi</li>
+                    <li>Marinda</li>
+                    <li>Dew</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="col-sm-12">
+            <p class="h2 text-bg-dark">Front End</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-sm-12">
+            <table class="table table-bordered table-hover text-center">
+                <thead>
+                    <tr class="table-warning">
+                        <th>Drinks</th>
+                        <th>Deserts</th>
+                        <th>Food</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-dark">
+                        <td>Pepsi</td>
+                        <td>Ice-cream</td>
+                        <td>Biryani</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <table class="table table-bordered table-hover text-center table-sm">
+                <thead>
+                    <tr class="table-warning">
+                        <th>Drinks</th>
+                        <th>Deserts</th>
+                        <th>Food</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-dark">
+                        <td>Pepsi</td>
+                        <td>Ice-cream</td>
+                        <td>Biryani</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>Dew</td>
+                        <td>Milk Shake</td>
+                        <td>Chicken Tikka</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="row row-cols-sm-2 row-cols-1 row-cols-lg-4">
+            <div class="col-md-3 my-2">
+                <img class="rounded img-fluid shadow-lg bg-body-tertiary" src="da89835d-865f-4d28-b172-017200e1ca61.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-3 my-2">
+                <img class="rounded img-fluid shadow-lg bg-body-tertiary" src="d67f9cd7-e223-4ef0-81b9-38496ba06936.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-3 my-2">
+                <img class="rounded img-fluid shadow-lg bg-body-tertiary" src="903a7d9f-50af-46dd-af07-a4efd7955cc9.jpg"
+                    alt="">
+            </div>
+            <div class="col-md-3 my-2">
+                <img class="rounded img-fluid shadow-lg bg-body-tertiary" src="d67f9cd7-e223-4ef0-81b9-38496ba06936.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col-sm-12">
+                <img class="rounded img-thumbnail img-fluid shadow bg-body-tertiary"
+                    src="eve-online-space-battle-4k-wallpaper-uhdpaper.com-547@0@i.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-lg">
+        <div class="alert alert-danger alert-dismissible col-8 fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Danger!</strong> You really want to continue <a class="alert-link" href="#">Go Back</a>
+        </div>
+        <div class="alert alert-warning col-6">
+            <strong>Warning!</strong> You really want to continue <a class="alert-link" href="#">Go Back</a>
+        </div>
+    </div>
+    <div class="container-lg">
+        <button class="btn btn-primary">Subscribe</button>
+        <button class="btn btn-danger">Subscribe</button>
+        <button class="btn btn-outline-warning ">Subscribe</button>
+        <button class="btn btn-dark btn-lg">Subscribe</button>
+        <button class="btn btn-info btn-sm">Subscribe</button>
+    </div>
+    <div class="container d-grid gap-3">
+        <button class="btn btn-primary mt-4">Subscribe</button>
+        <button class="btn btn-danger">Subscribe</button>
+        <button class="btn btn-outline-warning ">Subscribe</button>
+    </div>
+    <div class="container-lg my-5">
+        <div class="btn-group my-5">
+            <button class="btn btn-primary">Subscribe</button>
+            <button class="btn btn-outline-warning ">Subscribe</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">More</button>
+                <div class="dropdown-menu text-bg-primary">
+                    <a href="#" class="dropdown-item">Primary</a>
+                    <a href="#" class="dropdown-item">Primary</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg p-5">
+        <span class="badge bg-primary rounded-pill">Jeans</span>
+        <span class="badge bg-dark rounded-pill">Clothes</span>
+        <span class="badge bg-success rounded-pill">Shirts</span>
+        <span class="badge bg-warning rounded-pill">Shoes</span>
+        <span class="badge bg-danger rounded-pill">Jackets</span>
+        <span class="badge bg-info rounded-pill">Belt</span>
+        <span class="badge bg-secondary rounded-pill">Watch</span>
+        <span class="badge bg-dark rounded-pill">Glasses</span>
+        <span class="badge bg-primary rounded-pill">Jeans</span>
+        <span class="badge bg-dark rounded-pill">Clothes</span>
+        <span class="badge bg-success rounded-pill">Shirts</span>
+        <span class="badge bg-warning rounded-pill">Shoes</span>
+        <span class="badge bg-danger">Jackets</span>
+        <span class="badge bg-info">Belt</span>
+        <span class="badge bg-secondary">Watch</span>
+        <span class="badge bg-dark">Glasses</span>
+        <span class="badge bg-primary">Jeans</span>
+        <span class="badge bg-dark">Clothes</span>
+        <span class="badge bg-success">Shirts</span>
+        <span class="badge bg-warning">Shoes</span>
+        <span class="badge bg-danger">Jackets</span>
+        <span class="badge bg-info">Belt</span>
+        <span class="badge bg-secondary">Watch</span>
+        <span class="badge bg-dark">Glasses</span>
+        <span class="badge bg-primary">Jeans</span>
+        <span class="badge bg-dark">Clothes</span>
+        <span class="badge bg-success">Shirts</span>
+        <span class="badge bg-warning">Shoes</span>
+        <span class="badge bg-danger">Jackets</span>
+        <span class="badge bg-info">Belt</span>
+        <span class="badge bg-secondary">Watch</span>
+        <span class="badge bg-dark">Glasses</span>
+        <span class="badge bg-primary">Jeans</span>
+        <span class="badge bg-dark">Clothes</span>
+        <span class="badge bg-success">Shirts</span>
+        <span class="badge bg-warning">Shoes</span>
+        <span class="badge bg-danger">Jackets</span>
+        <span class="badge bg-info">Belt</span>
+        <span class="badge bg-secondary">Watch</span>
+        <span class="badge bg-dark">Glasses</span>
+        <div class="container-fluid p-3 d-flex justify-content-evenly flex-wrap">
+            <button type="button" class="btn btn-danger">Messages <span class="badge bg-primary">10</span></button>
+            <button type="button" class="btn btn-warning">Messages <span class="badge bg-dark">10</span></button>
+            <button type="button" class="btn btn-primary">Messages <span class="badge bg-danger">10</span></button>
+            <button type="button" class="btn btn-info">Messages <span class="badge bg-secondary">10</span></button>
+            <button type="button" class="btn btn-dark">Messages <span class="badge bg-warning">10</span></button>
+        </div>
+    </div>
+    <div class="container-lg p-5">
+        <div class="progress">
+            <div class="progress-bar bg-dark" style="width: 50%;">50%</div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated text-dark"
+                style="width: 60%;">60%</div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-warning progress-bar-striped text-dark" style="width: 80%;">80%</div>
+        </div>
+        <br>
+        <div class="progress" style="height: 30px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-warning" style="width: 30%;">
+                Maths</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-danger" style="width: 20%;">
+                Chemistry</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated text-bg-info" style="width: 40%;">
+                Physics</div>
+        </div>
+    </div>
+    <div class="container-lg p-5">
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-info"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-secondary"></div>
+        <div class="spinner-border text-dark"></div>
+        <div class="spinner-border text-light"></div>
+        <br>
+        <div class="spinner-grow text-muted"></div>
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-success"></div>
+        <div class="spinner-grow text-info"></div>
+        <div class="spinner-grow text-warning"></div>
+        <div class="spinner-grow text-danger"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-dark"></div>
+        <div class="spinner-grow text-light"></div>
+        <br>
+        <button class="btn btn-warning"><span class="spinner-border spinner-border-sm text-danger"></span>
+            Loading...</button>
+        <button class="btn btn-danger"><span class="spinner-grow spinner-grow-sm text-warning"></span>
+            Loading...</button>
+        <button class="btn btn-info" disabled><span class="spinner-grow spinner-grow-sm text-dark"></span>
+            Loading...</button>
+    </div>
+    <div class="container-lg p-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Week 5</a></li>
+            <li class="breadcrumb-item"><a href="#">English</a></li>
+            <li class="breadcrumb-item"><a href="#">Chater 5</a></li>
+            <li class="breadcrumb-item active">Childhood Friendship</li>
+        </ul>
+    </div>
+    <div class="container-lg p-1">
+        <ul class="list-group">
+            <li class="list-group-item">Biiryani</li>
+            <li class="list-group-item">Tikka</li>
+            <li class="list-group-item">Chicken Handi</li>
+            <li class="list-group-item">Mutton Pulao</li>
+            <li class="list-group-item">Kheer</li>
+        </ul>
+        <br>
+        <ul class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">Pepsi</a>
+            <a href="#" class="list-group-item list-group-item-action">Marinda</a>
+            <a href="#" class="list-group-item list-group-item-action">Dew</a>
+            <a href="#" class="list-group-item list-group-item-action">Juice</a>
+            <a href="#" class="list-group-item list-group-item-action">Sting</a>
+            <a href="#" class="list-group-item list-group-item-action">Sprite</a>
+        </ul>
+        <br>
+        <ul class="list-group list-group-flush">
+            <a href="#" class="list-group-item list-group-item-action">Pepsi</a>
+            <a href="#" class="list-group-item list-group-item-action">Marinda</a>
+            <a href="#" class="list-group-item list-group-item-action">Dew</a>
+            <a href="#" class="list-group-item list-group-item-action">Juice</a>
+            <a href="#" class="list-group-item list-group-item-action">Sting</a>
+            <a href="#" class="list-group-item list-group-item-action">Sprite</a>
+        </ul>
+        <br>
+        <ul class="list-group list-group-numbered">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">Pepsi</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">Marinda</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Dew</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Juice</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Sting</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Sprite</a>
+        </ul>
+        <br>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">Biiryani</li>
+            <li class="list-group-item">Tikka</li>
+            <li class="list-group-item">Chicken Handi</li>
+            <li class="list-group-item">Mutton Pulao</li>
+        </ul>
+    </div>
+    <div class="container-lg p-1">
+        <ul class="list-group">
+            <a href="#"
+                class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center list-group-item-action">
+                Inbox
+                <span class="badge rounded-pill bg-warning">25</span>
+            </a>
+            <a href="#"
+                class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center list-group-item-action">
+                Messages
+                <span class="badge rounded-pill bg-danger">14</span>
+            </a>
+            <a href="#"
+                class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center list-group-item-action">
+                Mails
+                <span class="badge rounded-pill bg-success">100</span>
+            </a>
+            <a href="#"
+                class="list-group-item list-group-item-info d-flex justify-content-between align-items-center list-group-item-action">
+                Replies
+                <span class="badge rounded-pill bg-dark">99</span>
+            </a>
+        </ul>
+    </div>
+    <div class="container-lg p-1">
+        <h1 class="text-center p-4 text-bg-warning">Executive Body</h1>
+        <div class="row py-3 gap-3 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                <img src="1.jpg" alt="" width="100%">
+                <div class="card-body">
+                    <h4 class="card-title">John Doe</h4>
+                    <p class="card-text text-justify">I am a talented and passionate front-end developer with a knack
+                        for creating captivating and user-friendly web experiences. With a solid foundation in HTML,
+                        CSS, and JavaScript, I bring innovative designs to life and ensure seamless functionality across
+                        different platforms.</p>
+                    <button class="btn btn-primary">Portfolio</button>
+                    <button class="btn btn-warning">Download CV</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                <img src="2.jpg" alt="" width="100%">
+                <div class="card-body">
+                    <h4 class="card-title">Jack Thomas</h4>
+                    <p class="card-text text-justify">I am a talented and passionate graphic designer with a flair for
+                        creating visually stunning and impactful designs. With a strong foundation in design principles
+                        and a keen eye for aesthetics, I bring ideas to life through innovative and captivating visuals.
+                    </p>
+                    <button class="btn btn-primary">Portfolio</button>
+                    <button class="btn btn-warning">Download CV</button>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                <img src="3.jpg" alt="" class="imgae-fluid">
+                <div class="card-body">
+                    <h4 class="card-title">George Daniel</h4>
+                    <p class="card-text text-justify">I am a talented and passionate Python developer with a deep
+                        understanding of the language and its vast ecosystem. With a strong foundation in computer
+                        science and programming principles, I bring innovative solutions to complex problems through
+                        clean and efficient code.</p>
+                    <button class="btn btn-primary">Portfolio</button>
+                    <button class="btn btn-warning">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg py-5">
+        <div class="dropdown">
+            <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h4 class="dropdown-header text-bg-danger">Special Items</h4>
+                </li>
+                <li><a href="#" class="dropdown-item">Biryani</a></li>
+                <li><a href="#" class="dropdown-item">Kofta</a></li>
+                <li>
+                    <h4 class="dropdown-header text-bg-danger">B.B.Q Items</h4>
+                </li>
+                <li><a href="#" class="dropdown-item">Roll</a></li>
+                <li><a href="#" class="dropdown-item">Tikka</a></li>
+                <li><a href="#" class="dropdown-item">Zinger</a></li>
+            </ul>
+        </div>
+        <div class="btn-group my-4">
+            <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h4 class="dropdown-header text-bg-warning">Special Items</h4>
+                </li>
+                <li>
+                    <div class="btn-group dropend">
+                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">Biryani</button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Chicken Biryani</li>
+                            <li class="dropdown-item">Mutton Biryani</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h4 class="dropdown-header text-bg-warning">Delicious Items</h4>
+                </li>
+                <li><a class="dropdown-item" href="#">Kofta</a></li>
+                <li><a class="dropdown-item" href="#">Zinger</a></li>
+                <li><a class="dropdown-item" href="#">Kulfa</a></li>
+                <li><a class="dropdown-item" href="#">Ras Malai</a></li>
+            </ul>
+        </div>
+        <div class="dropdown my-4">
+            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside">
+                Dropdown form
+            </button>
+            <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2"
+                        placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2"
+                        placeholder="Password">
+                </div>
+                <div class="mb-3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                        <label class="form-check-label" for="dropdownCheck2">
+                            Remember me
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-warning">Sign in</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-lg my-5 py-4">
+        <div class="col-md">
+            <h1 class="text-center text-bg-warning p-3">Team</h1>
+        </div>
+        <div id="accordion">
+            <!-- Collaspeone -->
+            <div class="card">
+                <!-- <div class="card-header text-center d-grid p-0 btn btn-dark"> -->
+                <a href="#collapseone" class="btn btn-dark" data-bs-toggle="collapse">Developers</a>
+                <!-- </div> -->
+                <div id="collapseone" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row py-3 gap-3 justify-content-center">
+                            <!-- Card 1 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="1.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate front-end developer
+                                        with a knack
+                                        for creating captivating and user-friendly web experiences. With a solid
+                                        foundation in HTML,
+                                        CSS, and JavaScript, I bring innovative designs to life and ensure seamless
+                                        functionality across
+                                        different platforms.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="2.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Jack Thomas</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate graphic designer
+                                        with a flair for
+                                        creating visually stunning and impactful designs. With a strong foundation in
+                                        design principles
+                                        and a keen eye for aesthetics, I bring ideas to life through innovative and
+                                        captivating visuals.
+                                    </p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="3.jpg" alt="" class="imgae-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">George Daniel</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate Python developer
+                                        with a deep
+                                        understanding of the language and its vast ecosystem. With a strong foundation
+                                        in computer
+                                        science and programming principles, I bring innovative solutions to complex
+                                        problems through
+                                        clean and efficient code.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#collapsetwo">Graphic
+                    Designers</button>
+                <div id="collapsetwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row py-3 gap-3 justify-content-center">
+                            <!-- Card 1 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="da89835d-865f-4d28-b172-017200e1ca61.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate front-end developer
+                                        with a knack
+                                        for creating captivating and user-friendly web experiences. With a solid
+                                        foundation in HTML,
+                                        CSS, and JavaScript, I bring innovative designs to life and ensure seamless
+                                        functionality across
+                                        different platforms.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="5.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Jack Thomas</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate graphic designer
+                                        with a flair for
+                                        creating visually stunning and impactful designs. With a strong foundation in
+                                        design principles
+                                        and a keen eye for aesthetics, I bring ideas to life through innovative and
+                                        captivating visuals.
+                                    </p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="4.jpg" alt="" class="imgae-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">George Daniel</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate Python developer
+                                        with a deep
+                                        understanding of the language and its vast ecosystem. With a strong foundation
+                                        in computer
+                                        science and programming principles, I bring innovative solutions to complex
+                                        problems through
+                                        clean and efficient code.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+                <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#collapsethree">SEO
+                    Experts</button>
+                <div id="collapsethree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row py-3 gap-3 justify-content-center">
+                            <!-- Card 1 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="d67f9cd7-e223-4ef0-81b9-38496ba06936.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">John Doe</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate front-end developer
+                                        with a knack
+                                        for creating captivating and user-friendly web experiences. With a solid
+                                        foundation in HTML,
+                                        CSS, and JavaScript, I bring innovative designs to life and ensure seamless
+                                        functionality across
+                                        different platforms.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="903a7d9f-50af-46dd-af07-a4efd7955cc9.jpg" alt="" width="100%">
+                                <div class="card-body">
+                                    <h4 class="card-title">Jack Thomas</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate graphic designer
+                                        with a flair for
+                                        creating visually stunning and impactful designs. With a strong foundation in
+                                        design principles
+                                        and a keen eye for aesthetics, I bring ideas to life through innovative and
+                                        captivating visuals.
+                                    </p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                            <!-- card 3 -->
+                            <div class="col-md card shadow-lg bg-body-tertiary p-0">
+                                <img src="4.jpg" alt="" class="imgae-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">George Daniel</h4>
+                                    <p class="card-text text-justify">I am a talented and passionate Python developer
+                                        with a deep
+                                        understanding of the language and its vast ecosystem. With a strong foundation
+                                        in computer
+                                        science and programming principles, I bring innovative solutions to complex
+                                        problems through
+                                        clean and efficient code.</p>
+                                    <button class="btn btn-primary">Portfolio</button>
+                                    <button class="btn btn-warning">Download CV</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel -->
+    <div class="container-lg py-5">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="22.jpg" alt="Los Angeles"
+                        class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="23.jpg" alt="Chicago"
+                        class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="24.jpg" alt="Chicago"
+                        class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="25.jpg" alt="Chicago"
+                        class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- modal -->
+        <div class="container-lg mt-3">
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#mymodal">Subscribe</button>
+            <div class="modal fade" id="mymodal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+        
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title" style="letter-spacing: 4px;">SUBSCRIBE</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+        
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                            <input type="email" class="form-control" placeholder="Enter e-mail">
+                        </div>
+        
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="width: 100%;">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
